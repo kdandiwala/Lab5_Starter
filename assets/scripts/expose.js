@@ -39,12 +39,12 @@ function init() {
     } 
     
   });
-
+  
+  const jsConfetti = new JSConfetti()
   let button = document.querySelector("button")
   button.addEventListener("click", function(){ 
     document.querySelector("audio").play()
-    if(options.value == "air-horn"){
-      const jsConfetti = new JSConfetti()
+    if(options.value == "party-horn"){
       jsConfetti.addConfetti()
     }
   });
